@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 const IndexPage = () => (
@@ -14,10 +14,24 @@ const IndexPage = () => (
         id="about"
       >
         <div className="w-100">
-          <h1 className="mb-0">
-            {config.firstName}
-            <span className="text-primary">{config.lastName}</span>
-          </h1>
+          <div className="row">
+            <div className="col-md-8 col-sm-12">
+              <h1 className="mb-0">
+                {config.firstName}
+
+                <span className="text-primary">{config.lastName}</span> 
+              </h1>
+            </div>
+            <div className="d-print-none col-md-4 text-right col-sm-12 row pt-4">
+
+              <div className="col-md-auto col-sm-12 pb-2">
+                <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" ><button className="btn btn-primary btn-block"><i class="fas fa-calendar-alt"></i> Schedule a Meeting</button></a>
+              </div>
+              <div className="col-md-auto col-sm-12 pb-4">
+                <a href="assets/images/Chuck_C_Williams_Jr_Resume_20191205.pdf" target="_blank" ><button className="btn btn-primary btn-block"> <i className="fab fa-adobe"></i> PDF</button></a>
+              </div>
+            </div>
+          </div>
           <div className="subheading mb-5">
             {config.address} · {config.phone} ·
             <a href={`mailto:${config.email}`}>{config.email}</a>
@@ -56,6 +70,8 @@ const IndexPage = () => (
           </div>
         </div>
       </section>
+
+
 
       <hr className="m-0" />
 
@@ -686,6 +702,10 @@ Various Ford/Firestone Cases.
           </ul>
         </div>
       </section> */}
+    </div>
+
+    <div className="print-footer">
+      <h5>{config.firstName}<span className="text-primary">{config.lastName}</span> · {config.phone} · <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank">Schedule a Meeting</a></h5>
     </div>
   </Layout>
 );

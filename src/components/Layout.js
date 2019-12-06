@@ -29,6 +29,7 @@ class Layout extends Component {
               ]}
             >
               <html lang="en" />
+
             </Helmet>
             <div className={'main-body'}>{children}</div>
           </>

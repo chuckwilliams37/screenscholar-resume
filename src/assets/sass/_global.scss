@@ -70,6 +70,12 @@ p.lead {
   }
 }
 
+@media only print{
+  .social-icons {
+    display: none;
+  }
+}
+
 .dev-icons {
   font-size: 3rem;
   .list-inline-item i {
