@@ -24,7 +24,7 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Resume, CV, Curriculum Vitae' },
+                { name: 'description', content: 'Chuck C. Williams, Jr. Resume / CV / Curriculum Vitae' },
                 { name: 'keywords', content: 'site, web, javascript, developer, node, nodejs, react, reactjs freelance developer, coder, web developer, salary, scheduler, meeting, employment, cv, resume, job' },
               ]}
             >
