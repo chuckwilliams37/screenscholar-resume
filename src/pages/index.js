@@ -28,7 +28,7 @@ const IndexPage = () => (
                 <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" ><button className="btn btn-primary btn-block"><i class="fas fa-calendar-alt"></i> Schedule a Meeting</button></a>
               </div>
               <div className="col-md-auto col-sm-12 pb-4">
-                <a href="assets/images/Chuck_C_Williams_Jr_Resume_20191205.pdf" target="_blank" ><button className="btn btn-primary btn-block"> <i className="fab fa-adobe"></i> PDF</button></a>
+                <a href="https://github.com/chuckwilliams37/screenscholar-resume/raw/master/src/assets/images/Chuck_C_Williams_Jr_Resume_20191205.pdf" target="_blank" ><button className="btn btn-primary btn-block"> <i className="fab fa-adobe"></i> PDF</button></a>
               </div>
             </div>
           </div>
