@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import Helmet from 'react-helmet';
 import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 // TODO: Implement information Popoovers
 // TODO: Implement Drift Bot w/ Chat
 
@@ -9,16 +11,6 @@ import Layout from '../components/Layout';
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
-
-import ReactGA from 'react-ga';
-ReactGA.initialize('UA-154121766-1',{
-  debug: true,
-  titleCase: false,
-  gaOptions: {
-    userId: 123,
-    cookieDomain: 'screenscholar.com'
-  }
-});
 
 const IndexPage = () => (
   <Layout>
@@ -41,7 +33,8 @@ const IndexPage = () => (
             <div className="d-print-none col-md-4 text-right col-sm-12 row pt-4">
 
               <div className="col-md-auto col-sm-12 pb-2">
-                <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary btn-block"><i className="fas fa-calendar-alt"></i> Schedule a Meeting</button></a>
+              
+                <OutboundLink href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary btn-block"><i className="fas fa-calendar-alt"></i> Schedule a Meeting</button></OutboundLink>
               </div>
               <div className="col-md-auto col-sm-12 pb-4">
                 <a href="https://github.com/chuckwilliams37/screenscholar-resume/raw/master/src/assets/images/Chuck_C_Williams_Jr_Resume_20191205.pdf" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary btn-block"> <i className="fab fa-adobe"></i> PDF</button></a>

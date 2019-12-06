@@ -4,7 +4,8 @@ import Scroll from './Scroll';
 
 import avatar from '../assets/images/avatar.png';
 import config from '../../config';
-import ReactGA from 'react-ga';
+
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
 
 export class Sidebar extends Component {
   constructor(props) {
@@ -29,7 +30,17 @@ export class Sidebar extends Component {
 
   trackClick() {
     console.log('trackClick');
-    ReactGA.pageview('Sidebar-nav');
+    // ReactGA.pageview('Sidebar-nav');
+    trackCustomEvent({
+      // string - required - The object that was interacted with (e.g.video)
+      category: "Special Button",
+      // string - required - Type of interaction (e.g. 'play')
+      action: "Click",
+      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+      label: "Gatsby Plugin Example Campaign",
+      // number - optional - Numeric value associated with the event. (e.g. A product ID)
+      value: 43
+    })
   }
 
   toggleNavbar() {
