@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
+// TODO: Implement information Popoovers
+// TODO: Implement Drift Bot w/ Chat
 
 import Layout from '../components/Layout';
 
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+
 const IndexPage = () => (
   <Layout>
+
+
     <Sidebar />
     <div className="container-fluid p-0">
+
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="about"
@@ -25,10 +32,10 @@ const IndexPage = () => (
             <div className="d-print-none col-md-4 text-right col-sm-12 row pt-4">
 
               <div className="col-md-auto col-sm-12 pb-2">
-                <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" ><button className="btn btn-primary btn-block"><i className="fas fa-calendar-alt"></i> Schedule a Meeting</button></a>
+                <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary btn-block"><i className="fas fa-calendar-alt"></i> Schedule a Meeting</button></a>
               </div>
               <div className="col-md-auto col-sm-12 pb-4">
-                <a href="https://github.com/chuckwilliams37/screenscholar-resume/raw/master/src/assets/images/Chuck_C_Williams_Jr_Resume_20191205.pdf" target="_blank" ><button className="btn btn-primary btn-block"> <i className="fab fa-adobe"></i> PDF</button></a>
+                <a href="https://github.com/chuckwilliams37/screenscholar-resume/raw/master/src/assets/images/Chuck_C_Williams_Jr_Resume_20191205.pdf" target="_blank" rel="noopener noreferrer"><button className="btn btn-primary btn-block"> <i className="fab fa-adobe"></i> PDF</button></a>
               </div>
             </div>
           </div>
@@ -44,6 +51,7 @@ const IndexPage = () => (
           </p>
 
           <small>
+            
 
           <p>
             Listed as inventor of 2 patents (Shutterfly's Photobook Application, and Level3's Dynamic Prompt System). History with visual design and User Experience (UX) oriented strategies and implementations. Current favorite technologies now include React/Redux/Firebase, AngularJS, NodeJS, MongoDB and the related ecosystem of build and dependency management tools (Webpack, Jest, Gulp, Grunt, Bower, etc.).
@@ -62,7 +70,7 @@ const IndexPage = () => (
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url} target="_blank">
+                <a key={url} href={url} target="_blank" rel="noopener noreferrer">
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
@@ -85,9 +93,9 @@ const IndexPage = () => (
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Tech Lead / DevOps / Automation, Process, & UX Full Stack Developer</h3>
-              <div className="subheading mb-3"><a href="https://equa.global" target="_blank">Equa Start, LLC</a>: Denver, Colorado & Remote </div>
+              <div className="subheading mb-3"><a href="https://equa.global" target="_blank" rel="noopener noreferrer">Equa Start, LLC</a>: Denver, Colorado & Remote </div>
               <p>
-              I teamed up with Equa to build a new and innovative way of managing agreements, and owning entities (like LLC's and Legal Trusts). I bring value to the team by analyzing, developing, and managing client service processes, developing automation, authoring code, designing UX flows, and building application interfaces and integrations in partnership with the client success team, and orchestrate that work in concert with multiple development teams. Reporting directly to the COO, I also monitor and guide the Equa application development process, and how the application flows directly integrate into client service processes. I then target areas of high-friction for automation improvemements. I also conduct Microsoft Platform DevOps, User Administration, and Email/Domain Management, as secondary objectives to making ownership and value transfers in orginazational entities easy with the Equa Agreements Platform.
+              I teamed up with Equa to build a new and innovative way of managing agreements, and owning entities (like LLC's and Legal Trusts). I bring value to the team by analyzing, developing, and managing client service processes, developing automation, authoring code, designing UX flows, and building application interfaces and integrations in partnership with the client success team, and orchestrate that work in concert with multiple development teams. Reporting directly to the COO, I also monitor and guide the Equa application development process, and how the application flows directly integrate into client service processes. I then target areas of high-friction for automation improvemements. I also conduct Microsoft Platform DevOps, User Administration, and Email/Domain Management, as secondary objectives to making ownership and value transfers in organizational entities easy with the Equa Agreements Platform.
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -98,9 +106,13 @@ const IndexPage = () => (
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Radio & Podcast show co-host</h3>
-              <div className="subheading mb-3"><a href="https://thecryptoshow.com" target="_blank">The Crypto Show</a>: Global & Remote</div>
+              <div className="subheading mb-3"><a href="https://thecryptoshow.com" target="_blank" rel="noopener noreferrer">The Crypto Show</a>: Global & Remote</div>
               <p>
-              Co-­hosting The Crypto Show, broadcasting on Bloomberg AM Radio in 5 cities, Let’s talk bitcoin, and youtube.com.
+              Co-­hosting The Crypto Show, broadcasting on Bloomberg AM Radio in 5 cities, 
+              &nbsp;<a href="http://www.bitcointalkradio.com/our-programs/thecryptoshow/"  target="_blank" rel="noopener noreferrer">Bitcoin Talk Radio</a>, 
+              &nbsp;<a href="https://letstalkbitcoin.com/blog/category/the-crypto-show"  target="_blank" rel="noopener noreferrer">Let’s talk bitcoin</a>, 
+              and <a href="https://www.youtube.com/channel/UCH720dsEFqx0gYyQrLZHCEQ"  target="_blank" rel="noopener noreferrer">youtube.com</a>.
+              
               </p>
               <ul>
                 <li>
@@ -110,7 +122,7 @@ const IndexPage = () => (
                   Preparing, Researching, and Interviewing guests on live & prerecorded broadcasts.
                 </li>
                 <li>
-                  Promoting & Advertising for sponsors including <a href="https://www.dash.org"  target="_blank">The Dash Masternode Network</a>, <a href="https://edge.app" target="_blank">Edge Wallet</a>, and <a href="https://anarchapulco.com/" target="_blank">Anarchapulco</a>.
+                  Promoting & Advertising for sponsors including <a href="https://www.dash.org"  target="_blank" rel="noopener noreferrer">The Dash Masternode Network</a>, <a href="https://edge.app" target="_blank" rel="noopener noreferrer">Edge Wallet</a>, and <a href="https://anarchapulco.com/" target="_blank" rel="noopener noreferrer">Anarchapulco</a>.
                 </li>
               </ul>
             </div>
@@ -121,16 +133,16 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Technical & Product Advocate / Advisor / UI/UX Developer / Public Speaker / Crypto-Activist</h3>
-              <div className="subheading mb-3"> <a href="https://www.screenscholar.com" target="_blank">Self Employed</a>: Global</div>
+              <h3 className="mb-0">Technical Advocate / Advisor / Consultant / Public Speaker / Crypto-Activist</h3>
+              <div className="subheading mb-3"> <a href="https://www.screenscholar.com" target="_blank" rel="noopener noreferrer">Self Employed</a>: Global</div>
               <p>
-              Accepting speaking engagements, offering consultation & full-stack development in the areas of Dash:digital cash, the cryptocurrency industry, web & mobile app interaction, and general software development. Offering perspectives, technical consulting, and solutions about whether, why, & how the blockchain should or should not be used for your next business project.
+              Accepting speaking engagements, offering consultation & full-stack development in the areas of Dash:digital cash, the cryptocurrency industry, web & mobile app interaction, software architecture, and general software development. Offering perspectives, technical consulting, and solutions about whether, why, & how the blockchain should or should not be used for your next business project.
               </p>
               <ul>
-                <li><a href="https://www.youtube.com/watch?v=b-XL_ddWCwQ"> "What is Evolution?"</a> ~ Dash Conference:London, October 2017 </li>
-                <li><a href="https://www.youtube.com/watch?v=pwGNOGnBNbE"> "What is Dash contributing to the Cannabis Economy?"</a> ~ CannMed:UCLA Campus, December 2018 </li>
-                <li><a href="https://www.youtube.com/watch?v=LIFdemq544k"> "DASH-ing to FREEDOM!"</a> ~ Anarchapulco:Acapulco, February 2018 </li>
-                <li><a href="https://www.dash.org/forum/threads/dash-trust-protector-candidate-list.43712/" target="_blank">Candidate for Dash Masternode Trust Protector</a> December, 2017 (<a href="https://dashwatchbeta.org/elections?tab=results&election=TPE2019" target="_blank">Results</a>)</li>
+                <li><a href="https://www.youtube.com/watch?v=b-XL_ddWCwQ"> "What is Evolution?"</a> ~ Dash Conference: London, October 2017 </li>
+                <li><a href="https://www.youtube.com/watch?v=pwGNOGnBNbE"> "What is Dash Contributing to the Cannabis Economy?"</a> ~ CannMed: UCLA Campus, December 2018 </li>
+                <li><a href="https://www.youtube.com/watch?v=LIFdemq544k"> "DASH-ing to FREEDOM!"</a> ~ Anarchapulco: Acapulco, February 2018 </li>
+                <li><a href="https://www.dash.org/forum/threads/dash-trust-protector-candidate-list.43712/" target="_blank" rel="noopener noreferrer">Candidate for Dash Masternode Trust Protector</a> ~ December, 2017 (<a href="https://dashwatchbeta.org/elections?tab=results&election=TPE2019" target="_blank" rel="noopener noreferrer">Results</a>)</li>
               </ul>
             </div>
             <div className="resume-date text-md-right">
@@ -141,7 +153,7 @@ const IndexPage = () => (
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">User Interface & User Experience Technical Lead</h3>
-              <div className="subheading mb-3"><a href="https://dash.org" target="_blank" >Dash Core Group, Inc</a>: Phoenix, Arizona & Remote</div>
+              <div className="subheading mb-3"><a href="https://dash.org" target="_blank" rel="noopener noreferrer">Dash Core Group, Inc</a>: Phoenix, Arizona & Remote</div>
               <p>
               Spokesperson, project management, code authorship, hiring & managing empathic designers & developers.
               </p>
@@ -164,7 +176,7 @@ designers, and project managers
                 Developed user­flow & interaction design artifacts
                 </li> */}
                 <li>
-                Implemented website updates & build fixes upon <a href="https://dash.org" target="_blank" >dash.org</a>.
+                Implemented website updates & build fixes upon <a href="https://dash.org" target="_blank" rel="noopener noreferrer" >dash.org</a>.
                 </li>
                 <li>
                 Authored NodeJs, ReactJS, AngularJS, SASS, SCSS/CSS3, BootStrap, and HTML/Jade code
@@ -179,7 +191,7 @@ designers, and project managers
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">User Experience & Interface Lead / SCRUM master</h3>
-              <div className="subheading mb-3"><a href="https://www.playerlync.com" target="_blank" >PlayerLync, LLC</a>: Denver, Colorado</div>
+              <div className="subheading mb-3"><a href="https://www.playerlync.com" target="_blank" rel="noopener noreferrer">PlayerLync, LLC</a>: Denver, Colorado</div>
               <p>
               Led the development team in all things UI/UX for the online Administrative tools (PLUI Admin) and end­user consumers (WebLync) that manage and deliver the PlayerLync ecosystem of content management.
               </p>
@@ -207,9 +219,9 @@ coaching executive leadership, and product managers on producing value from the 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Senior Programmer / Analyst - Internet</h3>
-              <div className="subheading mb-3">OppenheimerFunds, Inc: Englewood, Colorado (acquired by <a href="https://www.invesco.com/us/gateway" target="_blank">Invesco</a>)</div>
+              <div className="subheading mb-3">OppenheimerFunds, Inc: Englewood, Colorado (acquired by <a href="https://www.invesco.com/us/gateway" target="_blank" rel="noopener noreferrer">Invesco</a>)</div>
               <p>
-              Reported directly to the Assistant Vice President of the Corporate Technology Group and lead the development team in all things UI/UX. Work included addressing hot production issues, forward­thinking long­term project planning & review, and delivering rich interfaces and visualizations for investors and investment brokers. 
+              Reported directly to the Assistant Vice President of the Corporate Technology Group and lead the development team in all things UI/UX. Work included addressing hot production issues, forward ­thinking long­-term project planning & review, and delivering rich interfaces and visualizations for investors and investment brokers. 
               Authored Ruby on Rails, AngularJS, SASS, SCSS/CSS3, jQuery, Foundation, & HTML/HAML code.
               </p>
               {/* <ul>
@@ -241,7 +253,7 @@ coaching executive leadership, and product managers on producing value from the 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Senior Software Architect</h3>
-              <div className="subheading mb-3">Level 3 Communications: Broomfield, Colorado (acquired by <a href="https://www.centurylink.com" target="_blank">CenturyLink</a>)</div>
+              <div className="subheading mb-3">Level 3 Communications: Broomfield, Colorado (acquired by <a href="https://www.centurylink.com" target="_blank" rel="noopener noreferrer">CenturyLink</a>)</div>
               <p>
               Acted as a Lead UI Architect for implementations on utility­ oriented, self­-service, customer facing web presences. Applied as inventor for my 2nd Patent. Delivered applications with AngularJS, Java, JSP, JavaScript, jQuery, Backbone, Flex, ActionScript, & Oracle SQL.
               </p>
@@ -274,9 +286,9 @@ coaching executive leadership, and product managers on producing value from the 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Practice Lead / Software Architect / Senior Sales Engineering Consultant</h3>
-              <div className="subheading mb-3"><a href="https://effectiveinc.com/">Effective UI, Inc</a>: Denver, Colorado (acquired by <a href="https://www.ogilvy.com/" target="_blank">Ogilvy</a>)</div>
+              <div className="subheading mb-3"><a href="https://effectiveinc.com/">Effective UI, Inc</a>: Denver, Colorado (acquired by <a href="https://www.ogilvy.com/" target="_blank" rel="noopener noreferrer">Ogilvy</a>)</div>
               <p>
-              Authored code & led development projects from design through to delivery for many Fortune 500 Organizations. Lead development team and became a named inventor of <a href="https://patents.justia.com/patent/20110283173" target="_blank" >patent #12/969,808</a>. Also facilitated “discovery workshops” and focused on developing comprehensive strategies. Authored countless lines of Actionscript, Coldfusion, Flex, FlexUnit, RobotLegs, JavaScript, Java, JSP, Oracle SQL, HTML & CSS.
+              Authored code & led development projects from design through to delivery for many Fortune 500 Organizations. Lead development team and became a named inventor of <a href="https://patents.justia.com/patent/20110283173" target="_blank" rel="noopener noreferrer">patent #12/969,808</a>. Also facilitated “discovery workshops” and focused on developing comprehensive strategies. Authored countless lines of Actionscript, Coldfusion, Flex, FlexUnit, RobotLegs, JavaScript, Java, JSP, Oracle SQL, HTML & CSS.
               </p>
               {/* <ul>
                 <li>
@@ -414,7 +426,7 @@ Various Ford/Firestone Cases.
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Production Designer - Web Specialist</h3>
-              <div className="subheading mb-3"><a href="https://www.prisma.com/" target="_blank">Prisma International</a>: Minneapolis, Minnesota</div>
+              <div className="subheading mb-3"><a href="https://www.prisma.com/" target="_blank" rel="noopener noreferrer">Prisma International</a>: Minneapolis, Minnesota</div>
               {/* <p>Developed Flash projects, presentations, proposals, and document layouts in multilingual formats.</p> */}
             </div>
             <div className="resume-date text-md-right">
@@ -472,7 +484,7 @@ Various Ford/Firestone Cases.
               <h3 className="mb-3">Additional Certifications</h3>
               <ul>
                 <li>
-                  Continuous Learning Courses on <a href="https://www.udemy.com/user/chuck-williams-7/" target="_blank">Udemy</a>, <a href="https://www.codecademy.com" target="_blank">CodeCademy</a>, <a href="https://egghead.io/" target="_blank">Egghead.io</a>.
+                  Continuous Learning Courses on <a href="https://www.udemy.com/user/chuck-williams-7/" target="_blank" rel="noopener noreferrer">Udemy</a>, <a href="https://www.codecademy.com" target="_blank" rel="noopener noreferrer">CodeCademy</a>, <a href="https://egghead.io/" target="_blank" rel="noopener noreferrer">Egghead.io</a>.
                 </li>
                 <li>
                   Rally Agile Practices Training: April 2011
@@ -485,9 +497,9 @@ Various Ford/Firestone Cases.
                 </li>
               </ul>
             </div>
-            <div className="resume-date text-md-right">
+            {/* <div className="resume-date text-md-right">
               <span className="text-primary">October 1976 - Present</span>
-            </div>
+            </div> */}
           </div>
 
 
@@ -705,7 +717,7 @@ Various Ford/Firestone Cases.
     </div>
 
     <div className="print-footer">
-      <h5>{config.firstName}<span className="text-primary">{config.lastName}</span> · {config.phone} · <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank">Schedule a Meeting</a></h5>
+      <h5>{config.firstName}<span className="text-primary">{config.lastName}</span> · {config.phone} · <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" rel="noopener noreferrer">Schedule a Meeting</a></h5>
     </div>
   </Layout>
 );

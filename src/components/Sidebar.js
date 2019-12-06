@@ -59,7 +59,6 @@ export class Sidebar extends Component {
           </span>
         </a>
         <button
-          className="navbar-toggler"
           className={`${classTwo}`} 
           type="button"
           aria-controls="navbarSupportedContent"

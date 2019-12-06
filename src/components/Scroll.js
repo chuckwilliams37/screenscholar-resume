@@ -17,10 +17,15 @@ class Scroll extends React.Component {
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
+    this.handleKey = this.handleKey.bind(this);
   }
   componentDidMount() {
     smoothscroll.polyfill();
   }
+  handleKey(e) {
+    console.log('handling key: ' + e.keyCode)
+  }
+
   handleClick(e) {
     e.preventDefault();
     let elem = 0;
@@ -61,7 +66,7 @@ class Scroll extends React.Component {
         {typeof this.props.children === 'object' ? (
           React.cloneElement(this.props.children, { onClick: this.handleClick })
         ) : (
-          <span onClick={this.handleClick}>{this.props.children}</span>
+          <span onClick={this.handleClick} onKeyUp={this.handleKey} >{this.props.children}</span>
         )}
       </Element>
     );
