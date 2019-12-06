@@ -4,18 +4,21 @@ import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
 // TODO: Implement Drift Bot w/ Chat
 
 import Layout from '../components/Layout';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 // import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 
+import ReactGA from 'react-ga';
+
 const IndexPage = () => (
   <Layout>
-
 
     <Sidebar />
     <div className="container-fluid p-0">
 
+    <GoogleAnalytics />
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="about"

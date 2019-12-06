@@ -4,6 +4,7 @@ import Scroll from './Scroll';
 
 import avatar from '../assets/images/avatar.png';
 import config from '../../config';
+import ReactGA from 'react-ga';
 
 export class Sidebar extends Component {
   constructor(props) {
@@ -22,7 +23,13 @@ export class Sidebar extends Component {
     };
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
+    this.trackClick = this.trackClick.bind(this);
       
+  }
+
+  trackClick() {
+    console.log('trackClick');
+    ReactGA.pageview('Sidebar-nav');
   }
 
   toggleNavbar() {
@@ -80,7 +87,7 @@ export class Sidebar extends Component {
             {tabs.map((tab, i) => {
               const { href, content } = tab;
               return (
-                <li className="nav-item" key={href}>
+                <li className="nav-item" key={href}  onClick={this.trackClick}>
                   <Scroll type="id" element={href}>
                     <a className="nav-link" href={`#${href}`}>
                       {content}
