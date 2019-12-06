@@ -1,7 +1,6 @@
 {
     "version": 2,
-    "name": "gatsby",
-    "alias": "screenscholar.com",
+    "name": "gatsby-screenscholar-resume",
     "builds": [{
         "src": "package.json",
         "use": "@now/static-build",

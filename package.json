@@ -29,6 +29,7 @@
     "develop": "gatsby develop",
     "build": "npm run clean && gatsby build",
     "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy:prod": "now --target production",
     "start": "gatsby serve",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
