@@ -48,9 +48,9 @@ div.print-footer {
   }
 
   section.resume-section {
-    margin: 1.5rem .5rem 3.5rem .5rem;
-    padding-top: .75rem !important;
-    padding-bottom: .75rem !important;
+    margin: .75rem .5rem 1.5rem .5rem;
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
     min-height: 0rem;
     page-break-before: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
     page-break-after: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
@@ -62,5 +62,9 @@ div.print-footer {
       page-break-after: auto; /* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
       page-break-inside: avoid; /* or 'auto' */
     }
+  }
+  
+  section#skills {
+    page-break-inside: avoid; /* or 'auto' */
   }
 }

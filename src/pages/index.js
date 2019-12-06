@@ -25,7 +25,7 @@ const IndexPage = () => (
             <div className="d-print-none col-md-4 text-right col-sm-12 row pt-4">
 
               <div className="col-md-auto col-sm-12 pb-2">
-                <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" ><button className="btn btn-primary btn-block"><i class="fas fa-calendar-alt"></i> Schedule a Meeting</button></a>
+                <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" ><button className="btn btn-primary btn-block"><i className="fas fa-calendar-alt"></i> Schedule a Meeting</button></a>
               </div>
               <div className="col-md-auto col-sm-12 pb-4">
                 <a href="https://github.com/chuckwilliams37/screenscholar-resume/raw/master/src/assets/images/Chuck_C_Williams_Jr_Resume_20191205.pdf" target="_blank" ><button className="btn btn-primary btn-block"> <i className="fab fa-adobe"></i> PDF</button></a>
@@ -37,7 +37,7 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-          Patented software developer. Terrestrial radio show & podcast co-host. Public speaker. Crypto-freedom activist & evangelist.
+          Patented software developer. Terrestrial radio show & podcast co-host. Public speaker. Crypto-freedom activist.
           <br/>
           <br/>
           Evolved, empathic problem solving involves clear assessment of reality, honest & transparent communications, and the capability to push through to results. <em> I make this work my art.</em> 
@@ -381,7 +381,7 @@ coaching executive leadership, and product managers on producing value from the 
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Creative Services Department Manager / Multimedia Development Manager</h3>
+              <h3 className="mb-0">Creative Services Department &amp; Multimedia Development Manager</h3>
               <div className="subheading mb-3">The Data Company, LLC: Memphis, Tennessee</div>
               {/* <p>
               Managed and developed various applications for corporate sale, distribution, and courtroom presentations. Prepared strategic graphics for high­-profile legal cases including: Adobe vs. Macromedia, ElcomSoft vs. USDOJ, Scott vs. RJ Reynolds/Phillip Morris, &
@@ -456,16 +456,16 @@ Various Ford/Firestone Cases.
             </div>
           </div>
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Anoka Senior High School</h3>
               <div className="subheading mb-3">Anoka, Minnesota</div>
-              {/* <div>Competitive Swimmer, Hospital Volunteer, McDonald's Manager</div> */}
+              <div>Competitive Swimmer, Hospital Volunteer, McDonald's Manager</div>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">Graduating Class of 1994</span>
             </div>
-          </div>
+          </div> */}
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
