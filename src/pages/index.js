@@ -15,16 +15,14 @@ import config from '../../config';
 const IndexPage = () => (
   <Layout>
 
-  {/* <Helmet>
+  <Helmet>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154121766-1"></script>
   <script type="application/ld+json">{`
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  
       gtag('config', 'UA-154121766-1');
   `}</script>
-  </Helmet> */}
+  </Helmet>
 
     <Sidebar />
 
