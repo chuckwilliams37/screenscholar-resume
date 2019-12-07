@@ -21,6 +21,7 @@ const IndexPage = () => (
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('config', 'UA-154121766-1');
+      gtag('event', 'pageview', 'Home');
   `}</script>
   </Helmet>
 
