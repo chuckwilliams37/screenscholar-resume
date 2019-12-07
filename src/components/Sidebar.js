@@ -5,8 +5,6 @@ import Scroll from './Scroll';
 import avatar from '../assets/images/avatar.png';
 import config from '../../config';
 
-import { trackCustomEvent } from 'gatsby-plugin-google-analytics'
-
 export class Sidebar extends Component {
   constructor(props) {
     super(props);
@@ -25,22 +23,33 @@ export class Sidebar extends Component {
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.trackClick = this.trackClick.bind(this);
+    // this.gtag = window.gtag;
       
   }
 
-  trackClick() {
-    console.log('trackClick');
+  trackClick(e) {
+    console.log('trackClick', window.gtag);
+
+    const gtag = window && window.gtag;
+
+    if (gtag) {
+      console.log('tracking available');
+      gtag('event', 'sidebar-nav', {target: e.currentTarget.innerText});
+    } else{
+      console.log('no tracking available');
+    }
+    // gtag('event', 'share');
     // ReactGA.pageview('Sidebar-nav');
-    trackCustomEvent({
-      // string - required - The object that was interacted with (e.g.video)
-      category: "Special Button",
-      // string - required - Type of interaction (e.g. 'play')
-      action: "Click",
-      // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
-      label: "Gatsby Plugin Example Campaign",
-      // number - optional - Numeric value associated with the event. (e.g. A product ID)
-      value: 43
-    })
+    // trackCustomEvent({
+    //   // string - required - The object that was interacted with (e.g.video)
+    //   category: "Special Button",
+    //   // string - required - Type of interaction (e.g. 'play')
+    //   action: "Click",
+    //   // string - optional - Useful for categorizing events (e.g. 'Spring Campaign')
+    //   label: "Gatsby Plugin Example Campaign",
+    //   // number - optional - Numeric value associated with the event. (e.g. A product ID)
+    //   value: 43
+    // })
   }
 
   toggleNavbar() {

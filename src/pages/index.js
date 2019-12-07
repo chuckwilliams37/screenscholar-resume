@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Helmet from 'react-helmet';
 import { Button, Popover, PopoverHeader, PopoverBody } from 'reactstrap';
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { OutboundLink } from 'gatsby-plugin-gtag'
 // TODO: Implement information Popoovers
 // TODO: Implement Drift Bot w/ Chat
 
@@ -15,7 +15,19 @@ import config from '../../config';
 const IndexPage = () => (
   <Layout>
 
+  {/* <Helmet>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154121766-1"></script>
+  <script type="application/ld+json">{`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-154121766-1');
+  `}</script>
+  </Helmet> */}
+
     <Sidebar />
+
     <div className="container-fluid p-0">
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
