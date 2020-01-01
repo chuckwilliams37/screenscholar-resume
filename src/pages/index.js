@@ -25,7 +25,7 @@ const IndexPage = () => (
       `}</script>
 
 
-      <script type="application/javascript">{`
+      {/* <script type="application/javascript">{`
     "use strict";
     !function() {
       var t = window.driftt = window.drift = window.driftt || [];
@@ -49,7 +49,7 @@ const IndexPage = () => (
     }();
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load('azinkdvzwirg');
-    `}</script>
+    `}</script> */}
   </Helmet>
 
     <Sidebar />
