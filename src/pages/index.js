@@ -83,27 +83,33 @@ const IndexPage = () => (
             {config.address} · {config.phone} ·
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
-          <p className="lead mb-5">
-          Patented software developer. Terrestrial radio show & podcast co-host. Public speaker. Crypto-freedom activist.
-          <br/>
-          <br/>
-          Evolved, empathic problem solving involves clear assessment of reality, honest & transparent communications, and the capability to push through to results. <em> I make this work my art.</em> 
+          
+          <p className="lead mb-3">
+            Patented software developer. Terrestrial radio show & podcast co-host. Public speaker. Crypto-freedom activist.
           </p>
-
+          
+          <p className="lead mb-3">
+            I beleive that evolved, empathic problem solving involves clear assessment of reality, honest & transparent communications, and the capability to push through to results. <em> I make this work my art.</em> 
+          </p>
+          
+          <p className="lead mb-3">
+            I intend to bring value crafting elegant interfaces & experiences, identifying & pursuing growth opportunities, and building software that aligns with my dream of voluntary interactions for all individuals, and a society free from coercion. 
+          </p>
+          
           <small>
             
 
-          <p>
+          {/* <p>
             Listed as inventor of 2 patents (Shutterfly's Photobook Application, and Level3's Dynamic Prompt System). History with visual design and User Experience (UX) oriented strategies and implementations. Current favorite technologies now include React/Redux/Firebase, AngularJS, NodeJS, MongoDB and the related ecosystem of build and dependency management tools (Webpack, Jest, Gulp, Grunt, Bower, etc.).
           </p>
           <p>
             Contributed to projects affecting the Office of the Director of National Intelligence (ODNI which oversees the FBI & CIA). Facilitated projects with National Geographic, Discovery, and The Learning Channels, Qwest and Level 3 Communications. Authored code for FedEx's Print Online Application allowing customers to upload and retrieve documents from FedEx Office Locations.
-          </p>
+          </p> */}
           <p>
-            Strengths include excellent business communications skills, measurable productivity, strategic planning, project direction, team management, and elegant problem solving in the realms of application code, systems architecture, and data management. Also heavy advocate for purposeful living, empathy, meditation, and radical transparency.
+            Strengths include business communications skills, measurable productivity, strategic planning, project direction, team management, and elegant problem solving in the realms of application code, systems architecture, and data management. Also heavy advocate for purposeful living, empathy, meditation, and radical transparency.
             </p>
             <p>
-          Twenty-consecutive-year history with ECMAScript (JavaScript & ActionScript), HTML, & CSS. Also competent with React, AngularJS, NodeJS, PHP, ColdFusion, MySQL, MSSQL, OracleSQL, Grunt, Adobe Fireworks, Photoshop, Illustrator, InDesign, 3D Studio MAX, Ableton Live, and Audio Mixing Board technology. Familiar with design patterns, client relations & presentations, and digital innovation and transformation strategies. 
+          {/* Twenty-consecutive-year history with ECMAScript (JavaScript & ActionScript), HTML, & CSS. Also competent with React, AngularJS, NodeJS, PHP, ColdFusion, MySQL, MSSQL, OracleSQL, Grunt, Adobe Fireworks, Photoshop, Illustrator, InDesign, 3D Studio MAX, Ableton Live, and Audio Mixing Board technology. Familiar with design patterns, client relations & presentations, and digital innovation and transformation strategies.  */}
           </p>
           </small>
           <div className="social-icons">
@@ -132,10 +138,11 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Tech Lead / DevOps / Automation, Process, & UX Full Stack Developer</h3>
+              {/* <h3 className="mb-0">Tech Lead / DevOps / Automation, Process, & UX Full Stack Developer</h3> */}
+              <h3 className="mb-0">Product, Experience, and Technical Development Lead</h3>
               <div className="subheading mb-3"><a href="https://equa.global" target="_blank" rel="noopener noreferrer">Equa Start, LLC</a>: Denver, Colorado & Remote </div>
               <p>
-              I teamed up with Equa to build a new and innovative way of managing agreements, and owning entities (like LLC's and Legal Trusts). I bring value to the team by analyzing, developing, and managing client service processes, developing automation, authoring code, designing UX flows, and building application interfaces and integrations in partnership with the client success team, and orchestrate that work in concert with multiple development teams. Reporting directly to the COO, I also monitor and guide the Equa application development process, and how the application flows directly integrate into client service processes. I then target areas of high-friction for automation improvemements. I also conduct Microsoft Platform DevOps, User Administration, and Email/Domain Management, as secondary objectives to making ownership and value transfers in organizational entities easy with the Equa Agreements Platform.
+              I teamed up with Equa to build a new and innovative way of managing agreements, and owning entities (like LLC's and Legal Trusts). I bring value to the team by analyzing, developing, and managing client service processes, developing automation, authoring code, designing UX flows, and building application interfaces and integrations in partnership with the client success team, and orchestrate that work in concert with multiple development teams. Reporting directly to the COO, I also monitor and guide the Equa application development process, and how the application flows directly integrate into client service processes. I then target areas of high-friction for automation improvements. I also conduct Microsoft Platform DevOps, User Administration, and Email/Domain Management, as secondary objectives to making ownership and value transfers in organizational entities easy with the Equa Agreements Platform.
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -145,7 +152,7 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Radio & Podcast show co-host</h3>
+              <h3 className="mb-0">Partner / Co-Host</h3>
               <div className="subheading mb-3"><a href="https://thecryptoshow.com" target="_blank" rel="noopener noreferrer">The Crypto Show</a>: Global & Remote</div>
               <p>
               Co-­hosting The Crypto Show, broadcasting on Bloomberg AM Radio in 5 cities, 
@@ -431,43 +438,22 @@ coaching executive leadership, and product managers on producing value from the 
             </div>
           </div>
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Creative Services Department &amp; Multimedia Development Manager</h3>
               <div className="subheading mb-3">The Data Company, LLC: Memphis, Tennessee</div>
-              {/* <p>
-              Managed and developed various applications for corporate sale, distribution, and courtroom presentations. Prepared strategic graphics for high­-profile legal cases including: Adobe vs. Macromedia, ElcomSoft vs. USDOJ, Scott vs. RJ Reynolds/Phillip Morris, &
- Ford/Firestone Cases. Managed department workflow, staff, purchases and expenditures, presentations and graphics printing equipment.
-              </p> */}
-              {/* <ul>
-                <li>
-                Managed and developed various applications for corporate sale, distribution, and courtroom presentations.
-                </li>
-                <li>
-                  Maintained and developed company Web Site using PHP4, DHTML, and Javascript.
-                </li>
-                <li>Developed payroll related intranet applications utilizing Macromedia Flash Remoting and ColdFusion Technologies.
-                </li>
-                <li>Produced custom 2D and 3D animated presentations.
-                </li>
-                <li>Prepared strategic graphics for high­-profile legal cases including: Adobe vs. Macromedia, ElcomSoft vs. USDOJ, Scott vs. RJ Reynolds/Phillip Morris,
-Various Ford/Firestone Cases.
-                </li>
-                <li>
-                  Managed department workflow, staff, purchases and expenditures, presentations and graphics printing equipment.
-                </li>
-              </ul> */}
+      
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">April 2002 -­ April 2004</span>
             </div>
-          </div>
+          </div> */}
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Production Designer - Web Specialist</h3>
               <div className="subheading mb-3"><a href="https://www.prisma.com/" target="_blank" rel="noopener noreferrer">Prisma International</a>: Minneapolis, Minnesota</div>
-              {/* <p>Developed Flash projects, presentations, proposals, and document layouts in multilingual formats.</p> */}
+              
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">November 2000 -­ April 2002</span>
@@ -478,12 +464,12 @@ Various Ford/Firestone Cases.
             <div className="resume-content">
               <h3 className="mb-0">Multimedia Developer</h3>
               <div className="subheading mb-3">Self-Employed: Minneapolis, Minnesota</div>
-              {/* <p>Developed presentations and web sites for various organizations including businesses, churches, and community organizations.</p> */}
+              
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">May 1998 ­- November 2000</span>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </section>
@@ -503,9 +489,9 @@ Various Ford/Firestone Cases.
               <div className="subheading mb-3">Bloomington, Minnesota: Associate of Applied Science</div>
               {/* <div>Multimedia Design & 3D Animation</div> */}
             </div>
-            <div className="resume-date text-md-right">
+            {/* <div className="resume-date text-md-right">
               <span className="text-primary">August 1997 - May 1999</span>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -588,9 +574,9 @@ Various Ford/Firestone Cases.
             <li className="list-inline-item">
               <i className="fab fa-php"></i>
             </li>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <i className="fab fa-python"></i>
-            </li>
+            </li> */}
             <li className="list-inline-item">
               <i className="fab fa-css3-alt"></i>
             </li>
@@ -757,7 +743,7 @@ Various Ford/Firestone Cases.
     </div>
 
     <div className="print-footer">
-      <h5>{config.firstName}<span className="text-primary">{config.lastName}</span> · {config.phone} · <a href="https://calendly.com/screenscholar/1hr-hiring-screening-call" target="_blank" rel="noopener noreferrer">Schedule a Meeting</a></h5>
+      <h5>{config.firstName}<span className="text-primary">{config.lastName}</span> · {config.phone} · <a href="https://calendly.com/screenscholar/meeting" target="_blank" rel="noopener noreferrer">Schedule a Meeting</a></h5>
     </div>
   </Layout>
 );
