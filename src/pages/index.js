@@ -89,7 +89,7 @@ const IndexPage = () => (
           </p>
           
           <p className="lead mb-3">
-            I beleive that evolved, empathic problem solving involves clear assessment of reality, honest & transparent communications, and the capability to push through to results. <em> I make this work my art.</em> 
+            I believe that evolved, empathic problem solving involves clear assessment of reality, honest & transparent communications, and the capability to push through to results. <em> I make this work my art.</em> 
           </p>
           
           <p className="lead mb-3">
